@@ -1,0 +1,9 @@
+('/Volumes/DOCUMENTS/UdeM/Creation musicale en langage python 2/Projet-app/accdata/dist/ACC Data Analyzer',
+ False,
+ False,
+ 'icn_main.icns',
+ None,
+ [],
+ None,
+ False,
+ 1396984347)

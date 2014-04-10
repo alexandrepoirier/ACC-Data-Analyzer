@@ -1,0 +1,36 @@
+1 - Énoncé:
+    Logiciel interpréteur de gestes captés par accéléromètre.
+
+2 - Analyses des besoins:
+    Appareil qui envoie des données par OSC à l'ordinateur. (iPhone)
+    Analyse des données afin d'extraire la direction des gestes.
+    Interface graphique donnant accès aux paramètres de l'OSC sur une page (in/out), et permettant de voir les données
+    brutes ainsi que les données analysés sur une autre page.
+
+3 - Acquisition de connaissances:
+    Méthodes pour calculer la direction d'un mouvement à partir des données de l'accéléromètre.
+    Recherche sur les possibilités du plan de correspondance pour une application à l'audio. (Mapping)
+
+4 - Modèle:
+    Analyse des données de l'accéléromètre et création de méta-variables à utiliser dans un plan de correspondance.
+
+    Détection de mouvements vers le haut, vers le bas, rotation avant-arrière et déplacements dans l'espace (force).
+    Utiliser cette information pour en déduire des comportements plus large (méta-variables) tel que l'activité, 
+    l'ampleur des mouvements, le type de mouvement (saccadé, lent).
+
+    Le plan de correspondance reposera sur des expérimentations personnelles pour le moment. Éventuellement, je me 
+    baserai sur des recherches qui lie les émotions à la musique et trouverai un moyen d'utiliser le geste de l'instrumentiste
+    pour lui permettre de contrôler la connotation émotionnelle de sa musique en modifiant certains éléments formels 
+    de la musique (tempo, densité de note, intensité).
+
+5 - Méthodes:
+    Une classe contiendra un récepteur OSC qui sera paramétré selon les besoins de l'utilisateur. Des méthodes seront
+    consacrées au calcul de la direction et la nature du geste. Une méthode pourra être prévue pour adoucir les données
+    brutes avec un niveau de "smoothing" réglable par le biais de l'interface.
+
+    Une deuxième classe recevra les données distillés par la première classe et s'occupera de gérer les méta-variables.
+    Elle retournera les valeurs sous forme de floats entre 0 et 1.
+    
+6 - Implémentation:
+
+7 - Test et maintenance

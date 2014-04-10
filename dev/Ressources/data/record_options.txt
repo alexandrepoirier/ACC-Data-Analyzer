@@ -1,0 +1,5 @@
+raw_data:1
+file_ext:0
+name:accdata
+rec_time:30
+path:/Users/alex/Desktop/AccData
